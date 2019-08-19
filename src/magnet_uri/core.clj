@@ -2,6 +2,10 @@
   (:import java.net.URLEncoder)
   (:require [clojure.string :as string]))
 
+(defn decode
+  [data]
+  (throw "Not yet implemented"))
+
 (defn encode
   [{:keys [xt dn tr] :as torrent-data}]
   (-> "magnet:?"
